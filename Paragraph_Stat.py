@@ -1,6 +1,6 @@
 import json,urllib.request, pandas
 from bs4 import BeautifulSoup
-with open('apikey.txt') as key:
+with open('apikey.txt') as key: #put your Guardian API key string (it is hexidecimal digits and dashes) that you got from signing up for the Guardian's developer API on the first line of a text file apikey.txt
     apikey=key.read()
 years,chars_per_paragraph=list(range(1999,2022)),list()
 for year in years:
